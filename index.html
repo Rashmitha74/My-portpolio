@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashmitha V | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f8fc;
+            color: #222;
+            line-height: 1.6;
+        }
+        
+        nav {
+            background: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav h2 {
+            color: white;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+        
+        nav a:hover {
+            color: #60a5fa;
+        }
+        
+        section {
+            padding: 70px 8%;
+        }
+        
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #eef2ff, #ffffff);
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .hero h1 span {
+            color: #2563eb;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 5px;
+        }
+        
+        .btn:hover {
+            background: #1d4ed8;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+        
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: #555;
+            font-size: 17px;
+        }
+        
+        .education,
+        .project {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .education h3,
+        .project h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+        
+        .skill {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+        
+        .contact {
+            text-align: center;
+            background: #111827;
+            color: white;
+        }
+        
+        .contact p {
+            margin: 10px 0;
+        }
+        
+        .contact a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #0b1120;
+            color: #aaa;
+        }
+        
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            nav a {
+                margin: 5px;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Rashmitha V</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="hero">
+        <div>
+            <h1>Hello, I'm <span>Rashmitha V</span></h1>
+            <p>BCA Graduate | Aspiring IT Professional</p>
+            <a class="btn" href="#projects">View My Work</a>
+            <a class="btn" href="#contact">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a BCA graduate with an interest in technology and software development. I enjoy learning new technologies and improving my technical and communication skills. I am looking forward to starting my career in the IT industry and contributing to a professional
+                team while continuously learning and growing.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+            <div class="skills-box">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Soft skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Leadership</li>
+                    <li>Adaptability</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2 class="section-title ">Education</h2>
+
+        <div class="education">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p><strong>Bhanadarkars Arts and Science College, Kundapura</strong></p>
+            <p>Mangalore University</p>
+            <p>Completed BCA</p>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2 class="section-title ">Projects</h2>
+
+        <div class="project">
+            <h3>🎬 Cinebook – Online Movie Ticket Booking System</h3>
+
+            <p>
+                Cinebook is an online movie ticket booking system developed to make movie ticket booking easier and more convenient for users.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>Technologies:</strong> HTML, CSS, JavaScript, PHP and MySQL
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2 class="section-title ">Contact Me</h2>
+
+        <p>📧 Email:
+            <a href="mailto:rashmitav981@gmail.com">
+                rashmitav981@gmail.com
+            </a>
+        </p>
+
+        <p>💼 LinkedIn:
+            <a href="https://www.linkedin.com/in/rashmitha-v-32776a361" target="_blank">
+                View LinkedIn Profile
+            </a>
+        </p>
+
+        <p>💻 GitHub:
+            <a href="https://github.com/Rashmitha74" target="_blank">
+                
+                View GitHub Profile
+            </a>
+        </p>
+    </section>
+    <footer>
+        <p>© 2026 Rashmitha V. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
